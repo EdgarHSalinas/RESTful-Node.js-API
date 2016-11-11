@@ -20,7 +20,7 @@
             <input type="text" placeholder="Email" ng-model="contact.email" class="form-control">
           </div>
           <div class="form-group">
-            <input type="text" placeholder="Website" ng-model="contact.website" class="form-control"> 
+            <input type="text" placeholder="Note" ng-model="contact.note" class="form-control"> 
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -31,7 +31,7 @@
           <li class="list-group-item" ng-repeat="contact in contacts">
             <h4>{{contact.first_name + ' ' + contact.last_name}}</h4>
             <p>{{contact.email}}</p>
-            <p>{{contact.website}}</p>
+            <p>{{contact.note}</p>
           </li>
         </ul>
       </div>
